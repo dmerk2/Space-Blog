@@ -2,7 +2,7 @@
   --primary: rgba(161, 61, 161, 0.493);
   --light: white;
   --dark: #212121;
-  --pink: #ff9fd8;
+  --pink: #8a3d97;
 }
 
 * {
@@ -55,6 +55,43 @@ header {
   z-index: 99;
   /* background-color: var(--dark);
   opacity: 0.9; */
+}
+
+header .container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .container h2 {
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+header .container span {
+  font-weight: 900;
+}
+
+nav.navBar {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(4, auto);
+}
+
+nav.navBar a {
+  color: inherit;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+nav.navBar a:hover {
+  background-color: var(--pink);
+  border: 3px solid var(--dark);
+  border-radius: 10px;
+  transition: 0.4s;
 }
 
 @keyframes animate {
