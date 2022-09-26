@@ -21,9 +21,12 @@
             <div class="card-body">
               <h5 class="card-title">Welcome to Space Blog</h5>
               <p class="card-text">This is a blog about space. You can read about space and post your own space related content.</p>
+              {{!-- if logged in allow to go to homepage --}}
+              {{if loggedIn}}
+              <a href="/homepage" class="btn btn-primary">Go to Homepage</a>
+              {{else}}
               <a href="/login" class="btn btn-primary">Login</a>
-              <a href="/signup" class="btn btn-primary">Sign Up</a>
-            </div>
+              </div>
           </div>
         </div>
       </div>
@@ -33,10 +36,8 @@
 
 </html>
   
-  {{!-- Path: views\login.handlebars --}}
-  {{!-- create a form that allows the user to login to the site --}}
-  {{!-- create a button link that redirects the user to the signup page --}}
+ 
   {{!-- create a button link that redirects the user to the main page --}}
-  {{!-- create a button link that redirects the user to the dashboard page --}}
+
 
 
