@@ -1,3 +1,18 @@
+:root {
+  --primary: rgba(161, 61, 161, 0.493);
+  --light: white;
+  --dark: #212121;
+  --pink: #ff9fd8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans";
+  /* border: 1px solid red; */
+}
+
 body, html {
 	background-image: url(http://opengameart.org/sites/default/files/seamless%20space_0.PNG);
   background-color: black;
@@ -18,6 +33,28 @@ body, html {
 	border-radius: 100%;
 	animation: animate 6s linear infinite;
 	transform: rotate(-15deg);
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 128px;
+  padding-right: 128px;
+
+  align-items: center;
+  width: 100%;
+}
+
+header {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  z-index: 99;
+  /* background-color: var(--dark);
+  opacity: 0.9; */
 }
 
 @keyframes animate {
