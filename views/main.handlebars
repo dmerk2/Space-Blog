@@ -1,20 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Space Blog</title>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="/css/jass.css">
 </head>
 
-<body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-       Space Blog
-      </h1>
-    </header>
-      <main class="container container-fluid mt-5">
-        {{{ body }}}
-      </main>
-  </div>
-  </body>
+{{!-- header title center  --}}
+<header>  
+  <h1>Space Blog</h1>
+</header>
+{{!-- create a button link that redirects the user to login page or to a sign up page --}}
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Welcome to Space Blog</h5>
+              <p class="card-text">This is a blog about space. You can read about space and post your own space related content.</p>
+              <a href="/login" class="btn btn-primary">Login</a>
+              <a href="/signup" class="btn btn-primary">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</html>
+   </body>
+
+    <nav>
+      <ul class="display-flex">
+        <li class="p-1">
+          <a href="/">Home</a>
+        </li>
+        <li class="p-1">
+          <a href="/login">Login</a>
+        </li>
+        <li class="p-1">
+          <a href="/register">Register</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
