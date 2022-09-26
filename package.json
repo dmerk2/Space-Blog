@@ -25,5 +25,13 @@
   "keywords": [],
   "devDependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmerk2/Space-Blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dmerk2/Space-Blog/issues"
+  },
+  "homepage": "https://github.com/dmerk2/Space-Blog#readme"
 }
