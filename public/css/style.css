@@ -1,8 +1,8 @@
 :root {
-  --primary: rgba(161, 61, 161, 0.493);
+  --primary: rgba(13, 206, 42, 0.493);
   --light: white;
   --dark: #212121;
-  --pink: #8a3d97;
+  --pink: #1bee3b;
 }
 
 * {
