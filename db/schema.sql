@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS spaceblog_db;
+DROP DATABASE IF EXISTS spacedout_db;
 
-CREATE DATABASE spaceblog_db;
+CREATE DATABASE spacedout_db;
