@@ -7,9 +7,21 @@ export default class lightbox{
                     <button type = button class="lightbox__close">
                         &times;
                     </button>
-                    <div class="lightbox__content">
-                        the main content
-                    </div>
+                    <div class="lightboxcontainer">
+                        <div class="leftbackground">
+                            <img src="./img/lightbox_side.png" alt="">
+                        </div>
+                        <div class="lightbox__content">
+                            <h2>Sign In</h2>
+                            <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="name"
+                            class="form-element"
+                          />
+                        </div>
+                    </div>    
                 </div>
             </div>
         `);
