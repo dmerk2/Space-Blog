@@ -18,6 +18,9 @@ Post.init(
     content: {
       type: DataTypes.TEXT,
       allowNull: false,
+      validate: {
+        len: [1, 150]
+      }
     },
     user_id: {
       type: DataTypes.INTEGER,
