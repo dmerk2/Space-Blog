@@ -31,9 +31,11 @@
 .lightbox__inner{
   position: relative;
   width: 100%;
-  max-width: 800;
-  background: white;
+  max-width: 600px;
+  max-height: 600px;
 
+  height: 100%;
+  background: white;
   min-height: 100px;
   box-shadow: 0 0 25px rgba(0,0,0,0.3)
 
@@ -57,7 +59,7 @@
 .lightbox__close:hover{
   color:rgba(0,0,0,.8);
 }
-/*
+
 body, html {
 	background-image: url(http://opengameart.org/sites/default/files/seamless%20space_0.PNG);
   background-color: black;
