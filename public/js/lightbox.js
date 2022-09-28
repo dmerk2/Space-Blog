@@ -1,7 +1,9 @@
 export default class lightbox{
     static activate(){
         // set display to none if overiding <style="display:none;">
-        document.body.insertAdjacentHTML("beforeend",  `
+        document.body.insertAdjacentHTML(
+          "beforeend",
+          `
             <div class="lightbox" id="lightbox">
                 <div class="lightbox__inner">
                     <button type = button class="lightbox__close">
@@ -12,19 +14,51 @@ export default class lightbox{
                             <img src="./img/lightbox_side.png" alt="">
                         </div>
                         <div class="lightbox__content">
-                            <h2>Sign In</h2>
-                            <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            placeholder="name"
-                            class="form-element"
-                          />
+                            <button type = button class="sign-in">Sign In</button>
+                            <form>
+                                <div class="form-grid">
+                                    <input 
+                                        type="text" 
+                                        name="email" 
+                                        id="email" 
+                                        placeholder="Email Address" 
+                                        class="form-element"
+                                    />
+                                    <input 
+                                        type="text" 
+                                        name="Password" 
+                                        id="password" 
+                                        placeholder="Password" 
+                                        class="form-element"
+                                    />
+                                </div>
+                            </form>
+                            <button type = button class="sign-up">Sign Up</button>
+                            <form>
+                                <div class="form-grid">
+                                    <input 
+                                        type="text" 
+                                        name="email" 
+                                        id="email" 
+                                        placeholder="Email Address" 
+                                        class="form-element"
+                                    />
+                                    <input 
+                                        type="text" 
+                                        name="Password" 
+                                        id="password" 
+                                        placeholder="Password" 
+                                        class="form-element"
+                                    />
+                                </div>
+                            </form>
+                            <button type = button class="forgot">Forgot Password</button>
                         </div>
                     </div>    
                 </div>
             </div>
-        `);
+        `
+        );
         
         const lightBox = document.querySelector("#lightbox");
         const btnClose = lightBox.querySelector(".lightbox__close");
