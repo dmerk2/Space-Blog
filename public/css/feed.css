@@ -27,13 +27,13 @@
 .rightFeed{
     width: 100%;
     border: solid green 2px;
-    height: 50%;
+    height: 20%;
     /* margin-bottom: 10%; */
    
 }
 
 .rightLowerFeed{ 
    width: 100%; 
-   height: 40%;
+   height: 75%;
    border: solid black 2px;
 }
