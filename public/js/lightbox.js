@@ -14,9 +14,30 @@ export default class lightbox{
                             <img src="./img/lightbox_side.png" alt="">
                         </div>
                         <div class="lightbox__content">
-                            <button type = button class="sign-in">Sign In</button>
+
                             <form>
-                                <div class="form-grid">
+                                <div class="inGrid">
+                                    <input 
+                                        type="text" 
+                                        name="email" 
+                                        id="email" 
+                                        placeholder="Email Address" 
+                                        class="form-element"
+                                    />
+                                    <input 
+                                        type="text" 
+                                        name="Password" 
+                                        id="password" 
+                                        placeholder="Password" 
+                                        class="form-element"
+                                    />
+
+                                    <button type = button class="forgot">Forgot Password</button>
+                                </div> 
+                            </form>
+                            <button type = button class="signIn">Sign In</button>
+                            <form>
+                                <div class="upGrid">
                                     <input 
                                         type="text" 
                                         name="email" 
@@ -33,32 +54,20 @@ export default class lightbox{
                                     />
                                 </div>
                             </form>
-                            <button type = button class="sign-up">Sign Up</button>
-                            <form>
-                                <div class="form-grid">
-                                    <input 
-                                        type="text" 
-                                        name="email" 
-                                        id="email" 
-                                        placeholder="Email Address" 
-                                        class="form-element"
-                                    />
-                                    <input 
-                                        type="text" 
-                                        name="Password" 
-                                        id="password" 
-                                        placeholder="Password" 
-                                        class="form-element"
-                                    />
-                                </div>
-                            </form>
-                            <button type = button class="forgot">Forgot Password</button>
+                            <button type = button class="signUp">Sign Up</button>
+                            
                         </div>
                     </div>    
                 </div>
             </div>
         `
         );
+        
+        const in_button = document.querySelector(".signIn button");
+        const up_button = document.querySelector(".signUp button");
+
+        const iNgrid = document.querySelector(".inGrid");
+        const uPgrid = document.querySelector(".upGrid");
         
         const lightBox = document.querySelector("#lightbox");
         const btnClose = lightBox.querySelector(".lightbox__close");
@@ -78,6 +87,19 @@ export default class lightbox{
         btnClose.addEventListener("click", () =>{
             closeLightbox();
         });
+
+        iNgrid.addEventListener("click", () =>{
+            closeLightbox();
+        });
+
+        in_button.onclick = ()=>{
+            iNgrid.classList.add("inActive");
+        } 
+        
+        
+        up_button.onclick = ()=>{
+            uPgrid.classList.add("upActive");
+        }
     }
     //dont touch! overides lightbox display 
     // static show(htmlorElement){
