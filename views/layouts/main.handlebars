@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaced Out</title>
+    {{!-- link css here --}}
+ <head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Spaced Out</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            {{if loggedIn}} 
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/logout">Logout</a></li>
+            {{else}}
+            <li><a href="/login">Login</a></li>
+            <li><a href="/signup">Signup</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        {{!-- main content here that {{{body}}} --}}
+      </main>
+  </body>   
+
+</html>
+
+
+{{!-- link javascipt  --}}
+
+
+
