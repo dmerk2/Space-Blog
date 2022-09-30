@@ -1,0 +1,29 @@
+<a href="/dashboard">Back to Dashboard</a>
+<br>
+<br>
+
+{{ post-info post}}
+
+{{#if loggedIn}}
+    <form action="/api/posts/{{this._id}}/comment" method="POST">
+        <textarea name="commentBody" placeholder="Leave a comment..."></textarea>
+        <button type="submit">Submit</button>
+    </form>
+{{/if}}
+
+{{#each this.comments}}
+    <div>
+        <p>{{this.commentBody}}</p>
+        <p>Commented by {{this.username}} on {{this.createdAt}}</p>
+        {{#if ../loggedIn}}
+            {{#if (isUserComment ../this this)}}
+                <button class="delete-comment" data-id="{{this._id}}">Delete</button>
+            {{/if}}
+        {{/if}}
+    </div>
+{{/each}}
+
+{{! Path: public\js\single-post.js }}
+
+{{!-- add comment js here --}}
+
