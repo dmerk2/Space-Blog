@@ -42,7 +42,7 @@ const postData = [
     user_id: 7,
   },
   {
-    title: "HHAT!?",
+    title: "WHAT!?",
     content:
       "The hospital you were born in is the only building you leave without entering",
     user_id: 8,
