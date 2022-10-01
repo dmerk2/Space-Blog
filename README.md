@@ -3,7 +3,7 @@
 
 ## Description
 
-##User-Story
+## User Story
 
 ## Table of Contents
 - [Title](#title)
