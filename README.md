@@ -14,18 +14,18 @@
 - [Installation](#installation)
 - [Contributing](#contributing)
 ## Applications Used
-HTML
-CSS
-Bootstrap
-JavaScript
-Node.js
-Express.js
-Express.session
-SQL
-mySQL2
-Sequelize
-Nodemon
-Handlebars
+HTML,
+CSS,
+Bootstrap,
+JavaScript,
+Node.js,
+Express.js,
+Express.session,
+SQL,
+mySQL2,
+Sequelize,
+Nodemon,
+Handlebars,
 .ENV
 ## Installation
 
