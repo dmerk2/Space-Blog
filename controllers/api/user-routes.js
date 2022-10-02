@@ -1,18 +1,22 @@
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
 
-// get all Users
-router.get('/', (req, res) => {
-    User.findAll({
-        attributes: { exclude: ['password'] }
+
+
+
+
+//  get all Users
+ router.get('/', (req, res) => {
+     User.findAll({
+         attributes: { exclude: ['password'] }
     
-    })
-        .then(dbUserData => res.json(dbUserData))
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
-        });
-});
+     })
+         .then(dbUserData => res.json(dbUserData))
+         .catch(err => {
+             console.log(err);
+             res.status(500).json(err);
+         });
+ });
 
 // get one user
 router.get('/:id', (req, res) => {
@@ -26,6 +30,8 @@ router.get('/:id', (req, res) => {
                 model: Post,
                 attributes: ['id', 'title', 'content','created_at']
             },
+
+
             {
                 model: Comment,
                 attributes: ['id', 'comment_text', 'created_at'],
@@ -53,12 +59,14 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     User.create({
         username: req.body.username,
+        email: req.body.email,
         password: req.body.password
     })
         .then(dbUserData => {
             req.session.save(() => {
                 req.session.user_id = dbUserData.id;
                 req.session.username = dbUserData.username;
+                req.session.email = dbUserData.email;
                 req.session.loggedIn = true;
 
                 res.json(dbUserData);
