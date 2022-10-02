@@ -1,43 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="styleSheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/star.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <title>Spaced Out</title>
+</head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="styleSheet" href="./css/main.css" />
-    <link rel="styleSheet" href="./css/lightbox.css" />
-    <title>Spaced Out</title>
-</head>
+    <link rel="stylesheet" href="./css/star.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
-<body>
+    <title>Spaced Out</title>
+  </head>
+
+
+  <body>
     <header>
+      <div class="container">
+        <h2><span>Spaced Out </span></h2>
+        <nav class="navBar">
+          <!-- <a href="#logout">Logout</a> -->
+          <!-- <a href="#profile">Profile</a> -->
+          <div class="blogButton">
+            <button class="blogbttn">Blog</button>
+          </div>
+          <div class="accountButton">
+            <button class="accountbttn">Account</button>
+          </div>
+          <!-- <a href="#blogs">Blog</a> -->
+        </nav>
+      </div>
+      <!-- <div class="mobileContainer">
+                <h2><span>Spaced Out </span>Page</h2>
+                <nav class="mobileBar">
+                  <div class="menu">
+                    <div class = "menuButton"><button class = menuBtn>Menu</button></div>
+                    <div class = "closeButton"><button class = menuBtn>Close</button></div>
+                    <div class="dropDown">
+                      <a href="#home">Home</a>
+                      <a href="#services">About Me</a>
+                      <a href="#blogs">Work</a>
+                      <a href="#contact">Contact</a>
+                    </div>
+                  </div>
+                </nav>
+              </div> -->
+    </header>
+
+    <main>
+      <section class="signingIn">
         <div class="container">
-          <h1><span>Spaced Out </span></h1>
-          <nav class="navBar">
-            <a href="#login">Login</a>
-            <a href="#logout">Logout</a>
-            <a href="#profile">Profile</a>
-            <a href="#blogs">Blog</a>
-          </nav>
+          <div id="inGrid" class="inGrid">
+            <form action>
+              <input type="text" name="email" id="email" placeholder="Email Address" class="form-element" />
+              <input type="text" name="Password" id="password" placeholder="Password" class="form-element" />
+              <div class="forgotPass">
+                <button type=button class="forgot">Forgot Password</button>
+              </div>
+              <div class="login">
+                <button type=button class="login">Login</button>
+              </div>
+            </form>
+          </div>
         </div>
-        <!-- <div class="mobileContainer">
-          <h2><span>Spaced Out </span>Page</h2>
-          <nav class="mobileBar">
-            <div class="menu">
-              <div class = "menuButton"><button class = menuBtn>Menu</button></div>
-              <div class = "closeButton"><button class = menuBtn>Close</button></div>
-              <div class="dropDown">
-                <a href="#home">Home</a>
-                <a href="#services">About Me</a>
-                <a href="#blogs">Work</a>
-                <a href="#contact">Contact</a>
+      </section>
+
+      <section class="signingUp">
+        <div class="container">
+          <h2>
+            Sign Up
+          </h2>
+          <div class="upGrid">
+            <div class="userInformation">
+              <h2>
+                User Information
+              </h2>
+              <form class="userGrid">
+                <input type="text" name="username" id="Username" placeholder="Username" class="form-element" />
+                <input type="text" name="email" id="email" placeholder="Email Address" class="form-element" />
+                <input type="text" name="firstname" id="firstName" placeholder="First Name" class="form-element" />
+                <input type="text" name="lastname" id="lastName" placeholder="Last Name" class="form-element" />
+              </form>
+            </div>
+            <div class="contactInformation">
+              <h2>
+                Contact Information
+              </h2>
+              <form class="contactGrid">
+                <input type="text" name="address" id="address" placeholder="address" class="form-element" />
+                <input type="text" name="city" id="city" placeholder="city" class="form-element" />
+                <input type="text" name="country" id="country" placeholder="Country" class="form-element" />
+                <input type="text" name="postalcode" id="postalCode" placeholder="Postal Code" class="form-element" />
+              </form>
+            </div>
+            <div class="aboutMe">
+              <h2>
+                About Me
+              </h2>
+              <form class="contactGrid">
+                <input type="text" name="about" id="about" placeholder="what do you like to smoke" class="form-element" />
+              </form>
+            </div>
+            <div class="createAccount">
+              <button type=button class="createAcc">Create Account</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="blog">
+        <div class="container">
+          <div class="blogGrid">
+            <div class="mainFeed">
+              <h2>High Thoughts</h2>
+              <div>This is the blog feed</div>
+            </div>
+            <div class="comment">
+              <div>This is where comments go</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="myAccount">
+        <div class="container">
+          <div class="accountGrid">
+            <div class="containter">
+              <div class="userInformation">
+                <h2>
+                  User Information
+                </h2>
+                <form class="userGrid">
+                  <input type="text" name="username" id="Username" placeholder="Username" class="form-element" />
+                  <input type="text" name="email" id="email" placeholder="Email Address" class="form-element" />
+                  <input type="text" name="firstname" id="firstName" placeholder="First Name" class="form-element" />
+                  <input type="text" name="lastname" id="lastName" placeholder="Last Name" class="form-element" />
+                </form>
+              </div>
+              <div class="contactInformation">
+                <h2>
+                  Contact Information
+                </h2>
+                <form class="contactGrid">
+                  <input type="text" name="address" id="address" placeholder="address" class="form-element" />
+                  <input type="text" name="city" id="city" placeholder="city" class="form-element" />
+                  <input type="text" name="country" id="country" placeholder="Country" class="form-element" />
+                  <input type="text" name="postalcode" id="postalCode" placeholder="Postal Code" class="form-element" />
+                </form>
+              </div>
+              <div class="aboutMe">
+                <h2>
+                  About Me
+                </h2>
+                <form class="contactGrid">
+                  <input type="text" name="about" id="about" placeholder="what do you like to smoke" class="form-element" />
+                </form>
               </div>
             </div>
-          </nav>
+          </div>
         </div>
-    </header> -->
+        </nav>
+      </div>
+      <!-- <div class="mobileContainer">
+              <h2><span>Spaced Out </span>Page</h2>
+              <nav class="mobileBar">
+                <div class="menu">
+                  <div class = "menuButton"><button class = menuBtn>Menu</button></div>
+                  <div class = "closeButton"><button class = menuBtn>Close</button></div>
+                  <div class="dropDown">
+                    <a href="#home">Home</a>
+                    <a href="#services">About Me</a>
+                    <a href="#blogs">Work</a>
+                    <a href="#contact">Contact</a>
+                  </div>
+                </div>
+              </nav>
+            </div> -->
+    </header>
 
-    section.
-      <script type="module" src="./js/main.js"></script>
-</body>
+    <main>
+      <section class="signingIn">
+        <div class="container">
+          <div id="inGrid" class="inGrid">
+            <form action>
+              <input type="text" name="email" id="email" placeholder="Email Address" class="form-element" />
+              <input type="text" name="Password" id="password" placeholder="Password" class="form-element" />
+              <div class="forgotPass">
+                <button type=button class="forgot">Forgot Password</button>
+              </div>
+              <div class="login">
+                <button type=button class="login">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="signingUp">
+        <div class="container">
+          <h2>
+            Sign Up
+          </h2>
+          <div class="upGrid">
+            <div class="userInformation">
+              <h2>
+                User Information
+              </h2>
+              <form class="userGrid">
+                <input type="text" name="username" id="Username" placeholder="Username" class="form-element" />
+                <input type="text" name="email" id="email" placeholder="Email Address" class="form-element" />
+                <input type="text" name="firstname" id="firstName" placeholder="First Name" class="form-element" />
+                <input type="text" name="lastname" id="lastName" placeholder="Last Name" class="form-element" />
+              </form>
+            </div>
+            <div class="contactInformation">
+              <h2>
+                Contact Information
+              </h2>
+              <form class="contactGrid">
+                <input type="text" name="address" id="address" placeholder="address" class="form-element" />
+                <input type="text" name="city" id="city" placeholder="city" class="form-element" />
+                <input type="text" name="country" id="country" placeholder="Country" class="form-element" />
+                <input type="text" name="postalcode" id="postalCode" placeholder="Postal Code" class="form-element" />
+              </form>
+            </div>
+            <div class="aboutMe">
+              <h2>
+                About Me
+              </h2>
+              <form class="contactGrid">
+                <input type="text" name="about" id="about" placeholder="what do you like to smoke" class="form-element" />
+              </form>
+            </div>
+            <div class="createAccount">
+              <button type=button class="createAcc">Create Account</button>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+
+    <section class="screenAnimation">
+      <video src="./css/smoke.mp4" autoplay muted></video>
+      <h1>
+        <span>S</span>
+        <span>P</span>
+        <span>A</span>
+        <span>C</span>
+        <span>E</span>
+        <span>D</span>
+        <span></span>
+        <span>O</span>
+        <span>U</span>
+        <span>T</span>
+      </h1>
+    </section>
+
+    <footer>
+      <div class="footBoxGrid">
+        <div class="footBox">
+          <div class="signInButton">
+            <button type=button class="signIn">Sign In</button>
+          </div>
+          <div class="signUpButton">
+            <button type=button class="signUp">Sign Up</button>
+          </div>
+        </div>
+    </footer>
+    <script type="module" src="./js/login.js"></script>
+
+    <script type="module" src="./js/main.js"></script>
+
+
+  </body>
+
 </html>

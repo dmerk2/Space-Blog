@@ -10,7 +10,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Fira Sans";
-  /* border: 1px solid red; */
+  border: 1px solid red;
+}
+.container{
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 128px;
+  padding-right: 128px;
+
+  align-items: center;
+  width: 100%;
 }
 
 .button {
@@ -41,37 +50,6 @@
   transition: 0.4s;
 }
 
-body, html {
-	background-image: url(http://opengameart.org/sites/default/files/seamless%20space_0.PNG);
-  background-color: black;
-  animation: space-animation 60s linear infinite;
-}
-
-.globe {
-	width: 92px;
-	height: 92px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -41px;
-  margin-top: -41px;
-	background: url('https://svs.gsfc.nasa.gov/vis/a000000/a002900/a002915/bluemarble-2048.png') repeat;
-  background-size: 184px 92px;
-  box-shadow: inset 20px 2px 50px rgba(0,0,0,1), 0 0 100px rgba(79,193,233,0.4);
-	border-radius: 100%;
-	animation: animate 6s linear infinite;
-	transform: rotate(-15deg);
-}
-
-.container {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding-left: 128px;
-  padding-right: 128px;
-
-  align-items: center;
-  width: 100%;
-}
 
 header {
   color: white;
@@ -122,13 +100,106 @@ nav.navBar a:hover {
   transition: 0.4s;
 }
 
-@keyframes animate {
-	from {
-		background-position: 184px 0;
-	}
+
+.inGrid,
+.upGrid{
+  position: fixed;
+  top: 0;
+  left: 0;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  transform: translate(-50%, -50%);
+
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 15px;
+  position: fixed;
+  display:none;
 }
-@keyframes space-animation {
-  from {
-      background-position-y: -100%;
-  }
+
+.inGrid.openIn,
+.upGrid.openUp{
+  display:flex;
 }
+
+
+
+.blogGrid{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  top: 0;
+  left: 0;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 75%;
+  margin: 10px;
+  grid-gap: 10px;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 15px;
+  position: fixed;
+  display:none;
+}
+
+.blogGrid.openBlog{
+  display: grid;
+}
+
+.accountGrid{
+  display: flex;
+  grid-template-columns: 70% 30%;
+  top: 0;
+  left: 0;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 25%;
+  margin: 10px;
+  grid-gap: 10px;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 15px;
+  position: fixed;
+  display:none;
+}
+
+.accountGrid.openAccount{
+  display:flex;
+
+}
+
+
+.footBox {
+  background-color: var(--dark);
+  text-align: center;
+  border-top: 5px solid var(--dark);  
+  padding-top: 16px;
+
+  color: white;
+  padding-bottom: 8px;
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.signIn,
+.signUp{
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  color:rgba(0,0,0,.5);
+}
+
+

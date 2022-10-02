@@ -16,7 +16,7 @@ export default class lightbox{
                         <div class="lightbox__content">
 
                             <form>
-                                <div class="inGrid">
+                                <div id = "inGrid" class="inGrid">
                                     <input 
                                         type="text" 
                                         name="email" 
@@ -62,12 +62,9 @@ export default class lightbox{
             </div>
         `
         );
-        
-        const in_button = document.querySelector(".signIn button");
-        const up_button = document.querySelector(".signUp button");
 
-        const iNgrid = document.querySelector(".inGrid");
-        const uPgrid = document.querySelector(".upGrid");
+        const iNgrid = document.querySelector("#inGrid");
+        const inButton = iNgrid.querySelector(".signIn");
         
         const lightBox = document.querySelector("#lightbox");
         const btnClose = lightBox.querySelector(".lightbox__close");
@@ -88,8 +85,8 @@ export default class lightbox{
             closeLightbox();
         });
 
-        iNgrid.addEventListener("click", () =>{
-            closeLightbox();
+        inButton.addEventListener("click", () =>{
+            iNgrid.style.display ="grid"
         });
 
         in_button.onclick = ()=>{
