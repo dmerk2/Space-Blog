@@ -28,10 +28,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dmerk2/Space-Blog.git"
+    "url": "git+https://github.com/dmerk2/Spaced-Blog.git"
   },
   "bugs": {
-    "url": "https://github.com/dmerk2/Space-Blog/issues"
+    "url": "https://github.com/dmerk2/Spaced-Blog/issues"
   },
-  "homepage": "https://github.com/dmerk2/Space-Blog#readme"
+  "homepage": "https://github.com/dmerk2/Spaced-Blog#readme"
 }
