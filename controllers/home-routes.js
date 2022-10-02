@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 
 // get all posts for homepage
@@ -83,23 +82,20 @@ router.get('/post/:id', (req, res) => {
     });
 
 router.get('/login', (req, res) => {
+    
     if (req.session.loggedIn) {
         res.redirect('/');
-        return;
     }
+
     res.render('login');
     });
 
     router.get('/signup', (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/');
-        return;
     }
+    
     res.render('signup');
-    });
-
-    router.get('*', (req, res) => {
-    res.render('404');
     });
 
 module.exports = router;

@@ -1,13 +1,15 @@
 <article class="post">
     <div class="whole-post">
         <div class="post-heading">
-            <a href="/post/{{this._id}}"><h2>{{this.title}}</h2></a>
-    </div>
-    <div class="created by">
-        <p id="comment-subtitle">
-            Posted by <b>{{user.username}} </b> on <b>{{format_date created_at}}</b>
-        </p>
-    </div>
+            <a href="/post/{{this._id}}">
+                <h2>{{this.title}}</h2>
+            </a>
+        </div>
+        <div class="created by">
+            <p id="comment-subtitle">
+                Posted by <b>{{user.username}} </b> on <b>{{format_date created_at}}</b>
+            </p>
+        </div>
     </div>
     <div class="content-section">
         <p>{{content}}</p>

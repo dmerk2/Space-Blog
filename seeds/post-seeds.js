@@ -6,6 +6,7 @@ const postData = [
     title: "Think about this!",
     content: "If you were born deaf, what language would you think in?",
     user_id: 1,
+    post_id: 2
   },
   {
     id: 2,
