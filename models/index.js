@@ -22,6 +22,9 @@ Comment.belongsTo(Post, {
   foreignKey: "comment_id",
   onDelete: "CASCADE",
   hooks: true,
+  // scope: {
+  //   commentableType: 'comment'
+  // }
 });
 
 Post.belongsTo(User, {
