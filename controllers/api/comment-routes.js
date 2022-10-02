@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const { User, Post, Comment } = require('../models');
-const withAuth = require('../utils/auth');
+const { Comment, Post, User } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 // get all comments
 router.get('/', (req, res) => {
@@ -11,8 +11,6 @@ router.get('/', (req, res) => {
             res.status(500).json(err);
         });
 });
-
-    
 
 // create a comment
 router.post('/', withAuth, (req, res) => {
