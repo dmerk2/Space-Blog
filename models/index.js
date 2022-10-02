@@ -8,19 +8,19 @@ User.hasMany(Post, {
 
 User.hasMany(Comment, {
   foreignKey: "user_id",
-  // onDelete: "CASCADE",
+  onDelete: "CASCADE",
   hooks: true,
 });
 
 Comment.belongsTo(User, {
   foreignKey: "comment_id",
-  // onDelete: "CASCADE",
+  onDelete: "CASCADE",
   hooks: true,
 });
 
 Comment.belongsTo(Post, {
   foreignKey: "comment_id",
-  // onDelete: "CASCADE",
+  onDelete: "CASCADE",
   hooks: true,
   // scope: {
   //   commentableType: 'comment'
@@ -29,7 +29,7 @@ Comment.belongsTo(Post, {
 
 Post.belongsTo(User, {
   foreignKey: "post_id",
-  // onDelete: "CASCADE",
+  onDelete: "CASCADE",
 });
 
 module.exports = { User, Post, Comment };
