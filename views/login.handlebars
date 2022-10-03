@@ -1,25 +1,24 @@
-{{!-- log in page --}}
-<section class="login-page">
-    <div class="form-heading">
-        <h2>Login</h2>
-    </div>
-    
-        <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" placeholder="Username">
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email">
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="Password">
-        </div>
-        <div class="form-group">
-            <button type="submit">Login</button>
-        </div>  
-    </form>
+<div class="card">
+    <div class="card-body">
+        <h3 class="card-header">Login</h3>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="exampleinputusername">Username</label>
+                <input type="text" class="form-control" id="username-login" autofocus="true" aria-describedby="Username">
+            </div>
+            <div class="form-group">
+                <label for="password-login">Password</label>
+                <input type="password" class="form-control"  autofocus="true" id="password-login">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+            <hr>
+            <p>Don't have an account? <a href="/signup">Sign up</a></p>
 
-    <a href="./signup.handlebars">Sign Up if dont already have an account</a>
-</section>
+
+            
+        </form>
+    </div>
+</div>
+
+{{!-- <script src="/js/login.js"></script> --}}
+
