@@ -1,29 +1,22 @@
-<a href="/dashboard">Back to Dashboard</a>
-<br>
-<br>
+{{> post-info post}}
 
-{{ post-info post}}
+{{if logged_in}}
+<div class="card">
+    <h3 class="card-header"></h3>
+    <form class="card-body comment-form" id="comment-form">
 
-{{#if loggedIn}}
-    <form action="/api/posts/{{this._id}}/comment" method="POST">
-        <textarea name="commentBody" placeholder="Leave a comment..."></textarea>
-        <button type="submit">Submit</button>
+        <label class="form-label">Comment</label>
+        <input id="comment" name="comment-body" class="form input" />
+
+        <button type="submit" class="btn">Submit</button>
     </form>
+</div>
+
 {{/if}}
 
-{{#each this.comments}}
-    <div>
-        <p>{{this.commentBody}}</p>
-        <p>Commented by {{this.username}} on {{this.createdAt}}</p>
-        {{#if ../loggedIn}}
-            {{#if (isUserComment ../this this)}}
-                <button class="delete-comment" data-id="{{this._id}}">Delete</button>
-            {{/if}}
-        {{/if}}
-    </div>
-{{/each}}
+{{> comments post.comments}}
 
-{{! Path: public\js\single-post.js }}
-
-{{!-- add comment js here --}}
+{{#if logged_in}}
+{{!-- <script src="/js/comment.js"></script> --}}
+{{/if}}
 

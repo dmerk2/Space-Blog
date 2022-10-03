@@ -9,31 +9,49 @@
  <head>
 
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Spaced Out</h1>
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            {{if loggedIn}} 
-            <li><a href="/dashboard">Dashboard</a></li>
-            <li><a href="/logout">Logout</a></li>
-            {{else}}
-            <li><a href="/login">Login</a></li>
-            <li><a href="/signup">Signup</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        {{!-- main content here that {{{body}}} --}}
-        {{{body}}}
-      </main>
-  </body>   
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <a class="navbar-brand" href="#">Spaced Out</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="navbar-nav">
+     <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="/dashboard">Dashboard</a>
+      {{#if Logged_In}}
+      <a class="nav-item nav-link"  href="/logout">Logout</a>
+      {{else}}
+      <a class="nav-item nav-link"  href="/login">Login</a>
+      {{/if}}
+    </div>
+  </div>
+  </nav>
+  
 
-</html>
+  <header>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Spaced Out</h1>
+        <p class="lead">A place to share your High Spaced Out Thought's</p>
+      </div>
+  </header>
+
+<main>
+  {{{ body }}}
+</main>
+
+{{#if logged_in}}
+{{!-- create a logout.js in public js --}}
+{{/if}}
 
 
-{{!-- link javascipt  --}}
+
+</body>
+
+      
+
+
+
 
 
 
