@@ -5,12 +5,27 @@
   --pink: #1bee3b;
 }
 
+@font-face {
+  font-family: starFont;
+  src: url(nightstars.ttf);
+}
+
+@font-face {
+  font-family: greenWall;
+  src: url(greenwall.ttf);
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(spliffs.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Fira Sans";
-  border: 1px solid red;
+  /* font-family: "Fira Sans"; */
+  /* border: 1px solid red; */
 }
 .container{
   max-width: 1600px;
@@ -48,6 +63,7 @@
   color: var(--dark);
   border: 4px solid var(--dark);
   transition: 0.4s;
+  box-shadow: inset 0 0 20px darkolivegreen;
 }
 
 
@@ -70,11 +86,15 @@ header .container {
   justify-content: space-between;
 }
 
+
 header .container h2 {
   color: inherit;
   text-transform: uppercase;
   font-size: 32px;
   font-weight: 900;
+  font-family: myFont;
+  color: darkolivegreen;
+  
 }
 
 header .container span {
@@ -193,6 +213,7 @@ nav.navBar a:hover {
   width: 100%;
 }
 
+
 .signIn,
 .signUp{
   border-radius: 10px;
@@ -200,6 +221,12 @@ nav.navBar a:hover {
   height: 50px;
   cursor: pointer;
   color:rgba(0,0,0,.5);
+  font-family: starFont;
+  font-weight: bolder;
+}
+
+.signIn:hover {
+  box-shadow: inset 0 0 40px darkolivegreen;
 }
 
 
