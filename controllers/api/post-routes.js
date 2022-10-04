@@ -46,19 +46,19 @@ router.get('/:id', (req, res) => {
         attributes: [
         'id',
         'title',
-        'comment_text',
-        'created_at',
+        'post_text',
+        
 
         ],
         include: [
-        {
-            model: Comment,
-            attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-            include: {
-            model: User,
-            attributes: ['username']
-            }
-        },
+        // {
+            // model: Comment,
+            // attributes: ['id', 'comment_text', 'post_id', 'user_id',],
+            // include: {
+            // model: User,
+            // attributes: ['username']
+            // }
+        // },
         {
             model: User,
             attributes: ['username']
@@ -80,10 +80,10 @@ router.get('/:id', (req, res) => {
 
 // POST api/posts
 router.post('/', withAuth, (req, res) => {
-    // expects {title: 'Taskmaster goes public!', comment_text: 'Blah, Blah, Blah', user_id: 1}
+    // expects {title: 'spaced out is live', post_text: 'Blah, Blah, Blah', user_id: 1}
     Post.create({
         title: req.body.title,
-        comment_text: req.body.comment_text,
+        post_text: req.body.post_text,
         user_id: req.session.user_id
     })
         .then(dbPostData => res.json(dbPostData))
@@ -93,11 +93,12 @@ router.post('/', withAuth, (req, res) => {
         });
     });
 
-    // update post comment_text
+    // update post post_text
 router.put('/:id', withAuth, (req, res) => {
+    // expects {title: 'spaced out is live', post_text: 'Blah, Blah, Blah', user_id: 1}
     Post.update(
         {
-        comment_text: req.body.comment_text
+        post_text: req.body.post_text
         },
         {
         where: {
