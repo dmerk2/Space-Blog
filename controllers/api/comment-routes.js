@@ -14,6 +14,7 @@ router.get('/', (req, res) => {
 
 // POST /api/comments
 router.post('/', withAuth, (req, res) => {
+    // expects {comment_text: "This is the comment", user_id: 1, post_id: 2}
     // check the session
     if (req.session) {
         Comment.create({
