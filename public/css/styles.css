@@ -25,6 +25,11 @@ body {
 video {
     object-fit: cover;
 }
+
+@font-face {
+    font-family: myFont;
+    src: url(spliffs.ttf);
+}
 h1 {
     margin: 0;
     padding: 0;
@@ -37,6 +42,7 @@ h1 {
     font-size: 5em;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.2em;
+    font-family: myFont;
 
 }
 h1 span {

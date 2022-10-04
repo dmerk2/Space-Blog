@@ -5,12 +5,32 @@
   --pink: #1bee3b;
 }
 
+@font-face {
+  font-family: starFont;
+  src: url(nightstars.ttf);
+}
+
+@font-face {
+  font-family: greenWall;
+  src: url(greenwall.ttf);
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(spliffs.ttf);
+}
+
+@font-face {
+  font-family: sweetFont;
+  src: url(sweetleaf.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Fira Sans";
-  border: 1px solid red;
+  /* font-family: "Fira Sans"; */
+  /* border: 1px solid red; */
 }
 .container{
   max-width: 1600px;
@@ -48,6 +68,22 @@
   color: var(--dark);
   border: 4px solid var(--dark);
   transition: 0.4s;
+  box-shadow: inset 0 0 20px darkolivegreen;
+}
+
+.blogbttn, .accountbttn {
+  border-radius: 10px;
+  padding: 5px 5px 5px 5px;
+  font-family: myFont;
+  font-size: larger;
+  cursor: pointer;
+  transition: 1.5s;
+}
+
+.blogbttn:hover, .accountbttn:hover {
+  box-shadow: inset 0 0 50px rgb(225, 53, 11);
+  transform: skew(20deg);
+  
 }
 
 
@@ -70,11 +106,15 @@ header .container {
   justify-content: space-between;
 }
 
+
 header .container h2 {
   color: inherit;
   text-transform: uppercase;
   font-size: 32px;
   font-weight: 900;
+  font-family: myFont;
+  color: darkolivegreen;
+  
 }
 
 header .container span {
@@ -178,7 +218,7 @@ nav.navBar a:hover {
 
 
 .footBox {
-  background-color: var(--dark);
+  background-color: darkolivegreen;
   text-align: center;
   border-top: 5px solid var(--dark);  
   padding-top: 16px;
@@ -193,6 +233,7 @@ nav.navBar a:hover {
   width: 100%;
 }
 
+
 .signIn,
 .signUp{
   border-radius: 10px;
@@ -200,6 +241,28 @@ nav.navBar a:hover {
   height: 50px;
   cursor: pointer;
   color:rgba(0,0,0,.5);
+  font-family: sweetFont;
+  font-weight: bolder;
+  font-size: large;
+  transform-style: preserve-3d;
+}
+
+.signIn:after, .signUp:after {
+  top: -100%;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  background: #ff7a59;
+  border-radius: 5px;
+  content: "I'm so high";
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
+}
+
+.signIn:hover, .signUp:hover {
+  box-shadow: inset 0 0 40px rgb(217, 75, 19);
+  transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(100%);
 }
 
 
