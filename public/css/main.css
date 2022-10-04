@@ -15,10 +15,10 @@
   src: url(greenwall.ttf);
 }
 
-@font-face {
+ @font-face {
   font-family: myFont;
   src: url(spliffs.ttf);
-}
+} 
 
 @font-face {
   font-family: sweetFont;
@@ -32,6 +32,7 @@
   /* font-family: "Fira Sans"; */
   /* border: 1px solid red; */
 }
+/* Header section  */
 .container{
   max-width: 1600px;
   margin: 0 auto;
@@ -40,6 +41,7 @@
 
   align-items: center;
   width: 100%;
+  /* border: 2px solid red; */
 }
 
 .button {
@@ -109,7 +111,7 @@ header .container {
 
 header .container h2 {
   color: inherit;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 32px;
   font-weight: 900;
   font-family: myFont;
@@ -191,6 +193,7 @@ nav.navBar a:hover {
   display: grid;
 }
 
+/* box on account page  */
 .accountGrid{
   display: flex;
   grid-template-columns: 70% 30%;
@@ -199,9 +202,10 @@ nav.navBar a:hover {
   top: 50%;
   left: 50%;
   background-color: white;
+  border-radius: 2%;
   transform: translate(-50%, -50%);
   width: 40%;
-  height: 25%;
+  height: 35%;
   margin: 10px;
   grid-gap: 10px;
   justify-content: center;
@@ -213,8 +217,9 @@ nav.navBar a:hover {
 
 .accountGrid.openAccount{
   display:flex;
+  align-items: center;
 
-}
+} 
 
 
 .footBox {
@@ -266,3 +271,21 @@ nav.navBar a:hover {
 }
 
 
+.containter{
+  /* border: 2px solid red; */
+}
+
+/* .accountGrid {
+  border: 2px blue solid;
+  background-color: rgb(10, 68, 10);
+  width: 25%;
+} */
+
+
+/* Clicking the sign up button  */
+.upGrid{
+  /* background-color: blue; */
+  width: 100%;
+  /* border: 2px solid blue; */
+  height: 100%;
+}
