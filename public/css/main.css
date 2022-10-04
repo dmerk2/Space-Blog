@@ -15,10 +15,10 @@
   src: url(greenwall.ttf);
 }
 
-@font-face {
+ @font-face {
   font-family: myFont;
   src: url(spliffs.ttf);
-}
+} 
 
 @font-face {
   font-family: sweetFont;
@@ -109,7 +109,7 @@ header .container {
 
 header .container h2 {
   color: inherit;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 32px;
   font-weight: 900;
   font-family: myFont;
