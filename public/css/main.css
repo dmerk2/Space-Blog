@@ -82,6 +82,7 @@
 
 .blogbttn:hover, .accountbttn:hover {
   box-shadow: inset 0 0 50px rgb(225, 53, 11);
+  transform: skew(20deg);
   
 }
 
@@ -243,11 +244,25 @@ nav.navBar a:hover {
   font-family: sweetFont;
   font-weight: bolder;
   font-size: large;
+  transform-style: preserve-3d;
+}
+
+.signIn:after, .signUp:after {
+  top: -100%;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  background: #ff7a59;
+  border-radius: 5px;
+  content: "I'm so high";
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
 }
 
 .signIn:hover, .signUp:hover {
   box-shadow: inset 0 0 40px rgb(217, 75, 19);
-  transition: 1.5s;
+  transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(100%);
 }
 
 
