@@ -4,35 +4,38 @@ const withAuth = require('../../utils/auth');
 
 // Get api/posts
 router.get('/', (req, res) => {
+    // 
+    console.log('======================');
     Post.findAll({
         attributes: [
-        'id',
-        'title',
-        'comment_text',
-        'created_at',
-        
+            'id',
+            'post_text',
+            'title',
+            
+
         ],
-        include: [
-        {
-            model: Comment,
-            attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-            include: {
-            model: User,
+        include: [{
+            model: User,    
             attributes: ['username']
-            }
         },
-        {
-            model: User,
-            attributes: ['username']
-        }
+        // {
+            // model: Comment,
+            // attributes: ['id', 'comment_text', 'post_id', 'user_id','created_at' ],
+            // include: {
+                // model: User,
+                // attributes: ['username'],
+            // }
+        // }
         ]
     })
         .then(dbPostData => res.json(dbPostData))
         .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
+            console.log(err);
+            res.status(500).json(err);
         });
-    });
+});
+
+
 
 // Get api/posts/1
 router.get('/:id', (req, res) => {
