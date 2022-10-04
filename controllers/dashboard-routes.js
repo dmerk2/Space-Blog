@@ -13,15 +13,15 @@ router.get('/', withAuth, (req, res) => {
         },
         attributes: [
             'id',
-            'content',
+            'post_text',
             'title',
-            'created_at',
+            ,
 
         ],
         include: [
             {
                 model: Comment,
-                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                attributes: ['id', 'comment_text', 'post_id', 'user_id', ],
                 include: {
                     model: User,
                     attributes: ['username']
@@ -43,7 +43,7 @@ router.get('/', withAuth, (req, res) => {
             res.status(500).json(err);
         });
 });
-
+// edit post
 router.get('/edit/:id', withAuth, (req, res) => {
     Post.findOne({
         where: {
@@ -51,14 +51,14 @@ router.get('/edit/:id', withAuth, (req, res) => {
         },
         attributes: [
             'id',
-            'content',
+            'post_text',
             'title',
-            'created_at',
+            
 
         ],
         include: [{
             model: Comment,
-            attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+            attributes: ['id', 'comment_text', 'post_id', 'user_id', ],
             include: {
                 model: User,
                 attributes: ['username']
@@ -91,8 +91,9 @@ router.get('/edit/:id', withAuth, (req, res) => {
         });
 ;
 
+    // get one post
     router.get('/new', (req, res) => {
-        res.render('add-post', {
+        res.render('new-post', {
             loggedIn: true
         });
     });
