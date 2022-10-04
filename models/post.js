@@ -15,12 +15,12 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    comment_text: {
+    post_text: {
       type: DataTypes.TEXT,
       allowNull: false,
       validate: {
-        len: [1, 150]
-      }
+        len: [1, 150],
+      },
     },
     user_id: {
       type: DataTypes.INTEGER,
@@ -33,9 +33,9 @@ Post.init(
       type: DataTypes.INTEGER,
       references: {
         model: "post",
-        key: "id"
-      }
-    }
+        key: "id",
+      },
+    },
   },
   {
     sequelize,
