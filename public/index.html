@@ -13,35 +13,35 @@
   <title>Spaced Out</title>
 </head> -->
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="styleSheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/star.css">
-    <link rel="stylesheet" href="./css/styles.css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="styleSheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/star.css">
+  <link rel="stylesheet" href="./css/styles.css">
 
-    <title>Spaced Out</title>
-  </head> 
+  <title>Spaced Out</title>
+</head>
 
 
-  <body>
-    <header>
-      <div class="container">
-        <h2><span>Spaced 0ut </span></h2>
-        <nav class="navBar">
-          <!-- <a href="#logout">Logout</a> -->
-          <!-- <a href="#profile">Profile</a> -->
-          <div class="blogButton">
-            <button class="blogbttn">Blog</button>
-          </div>
-          <div class="accountButton">
-            <button class="accountbttn">Account</button>
-          </div>
-          <!-- <a href="#blogs">Blog</a> -->
-        </nav>
-      </div>
-      <!-- <div class="mobileContainer">
+<body>
+  <header>
+    <div class="container">
+      <h2><span>Spaced 0ut </span></h2>
+      <nav class="navBar">
+        <!-- <a href="#logout">Logout</a> -->
+        <!-- <a href="#profile">Profile</a> -->
+        <div class="blogButton">
+          <button class="blogbttn">Blog</button>
+        </div>
+        <div class="accountButton">
+          <button class="accountbttn">Account</button>
+        </div>
+        <!-- <a href="#blogs">Blog</a> -->
+      </nav>
+    </div>
+    <!-- <div class="mobileContainer">
                 <h2><span>Spaced Out </span>Page</h2>
                 <nav class="mobileBar">
                   <div class="menu">
@@ -56,32 +56,93 @@
                   </div>
                 </nav>
               </div> -->
-    </header>
+  </header>
 
-    <main>
-      <section class="signingIn">
-        <div class="container">
-          <div id="inGrid" class="inGrid">
-            <form action>
+  <main>
+    <section class="signingIn">
+      <div class="container">
+        <div id="inGrid" class="inGrid">
+          <form action>
+            <input type="text" name="email" id="email" placeholder="Email Address" class="form-element" />
+            <input type="text" name="Password" id="password" placeholder="Password" class="form-element" />
+            <div class="forgotPass">
+              <button type=button class="forgot">Forgot Password</button>
+            </div>
+            <div class="login">
+              <button type=button class="login">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="signingUp">
+      <div class="container">
+        <h2>
+          Sign Up
+        </h2>
+        <div class="upGrid">
+          <div class="userInformation">
+            <h2>
+              User Information
+            </h2>
+            <form class="userGrid">
+              <input type="text" name="username" id="Username" placeholder="Username" class="form-element" />
               <input type="text" name="email" id="email" placeholder="Email Address" class="form-element" />
-              <input type="text" name="Password" id="password" placeholder="Password" class="form-element" />
-              <div class="forgotPass">
-                <button type=button class="forgot">Forgot Password</button>
-              </div>
-              <div class="login">
-                <button type=button class="login">Login</button>
-              </div>
+              <input type="text" name="firstname" id="firstName" placeholder="First Name" class="form-element" />
+              <input type="text" name="lastname" id="lastName" placeholder="Last Name" class="form-element" />
             </form>
           </div>
+          <div class="contactInformation">
+            <h2>
+              Contact Information
+            </h2>
+            <form class="contactGrid">
+              <input type="text" name="address" id="address" placeholder="Address" class="form-element" />
+              <input type="text" name="city" id="city" placeholder="City" class="form-element" />
+              <input type="text" name="country" id="country" placeholder="Country" class="form-element" />
+              <input type="text" name="postalcode" id="postalCode" placeholder="Postal Code" class="form-element" />
+            </form>
+          </div>
+          <div class="aboutMe">
+            <h2>
+              About Me
+            </h2>
+            <form class="contactGrid">
+              <input type="text" name="about" id="about" placeholder="What do you like to smoke?"
+                class="form-element" />
+            </form>
+          </div>
+          <div class="createAccount">
+            <button type=button class="createAcc">Create Account</button>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="signingUp">
-        <div class="container">
-          <h2>
-            Sign Up
-          </h2>
-          <div class="upGrid">
+    <section id="blog" class="blog">
+      <div class="container">
+        <div class="blogGrid">
+          <div class="mainFeed">
+            <h2>High Thoughts</h2>
+            <ul id="myList">
+
+            </ul>
+          </div>
+          <div class="comment">
+            <div>Write Your Highest Thoughts</div>
+            <textarea id="blogSubmission" name="submit" rows="4" cols="30" placeholder="Write Your Highest Thoughts">
+               </textarea>
+            <button onclick="myFunction()">Spark Up </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="myAccount">
+      <div class="container">
+        <div class="accountGrid">
+          <div class="containter">
             <div class="userInformation">
               <h2>
                 User Information
@@ -109,70 +170,17 @@
                 About Me
               </h2>
               <form class="contactGrid">
-                <input type="text" name="about" id="about" placeholder="What do you like to smoke?" class="form-element" />
+                <input type="text" name="about" id="about" placeholder="What do you like to smoke?"
+                  class="form-element" />
               </form>
             </div>
-            <div class="createAccount">
-              <button type=button class="createAcc">Create Account</button>
-            </div>
           </div>
         </div>
-      </section>
-
-      <section id="blog" class="blog">
-        <div class="container">
-          <div class="blogGrid">
-            <div class="mainFeed">
-              <h2>High Thoughts</h2>
-              <div>This is the blog feed</div>
-            </div>
-            <div class="comment">
-              <div>This is where comments go</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <section class="myAccount">
-        <div class="container">
-          <div class="accountGrid">
-            <div class="containter">
-              <div class="userInformation">
-                <h2>
-                  User Information
-                </h2>
-                <form class="userGrid">
-                  <input type="text" name="username" id="Username" placeholder="Username" class="form-element" />
-                  <input type="text" name="email" id="email" placeholder="Email Address" class="form-element" />
-                  <input type="text" name="firstname" id="firstName" placeholder="First Name" class="form-element" />
-                  <input type="text" name="lastname" id="lastName" placeholder="Last Name" class="form-element" />
-                </form>
-              </div>
-              <div class="contactInformation">
-                <h2>
-                  Contact Information
-                </h2>
-                <form class="contactGrid">
-                  <input type="text" name="address" id="address" placeholder="Address" class="form-element" />
-                  <input type="text" name="city" id="city" placeholder="City" class="form-element" />
-                  <input type="text" name="country" id="country" placeholder="Country" class="form-element" />
-                  <input type="text" name="postalcode" id="postalCode" placeholder="Postal Code" class="form-element" />
-                </form>
-              </div>
-              <div class="aboutMe">
-                <h2>
-                  About Me
-                </h2>
-                <form class="contactGrid">
-                  <input type="text" name="about" id="about" placeholder="What do you like to smoke?" class="form-element" />
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        </nav>
       </div>
-      <!-- <div class="mobileContainer">
+      </nav>
+      </div>
+    </section>
+    <!-- <div class="mobileContainer">
               <h2><span>Spaced Out </span>Page</h2>
               <nav class="mobileBar">
                 <div class="menu">
@@ -187,7 +195,6 @@
                 </div>
               </nav>
             </div> -->
-    </header>
 
     <main>
       <!--Sign in button sends you to this box-->
@@ -241,7 +248,8 @@
                 About Me
               </h2>
               <form class="contactGrid">
-                <input type="text" name="about" id="about" placeholder="What do you like to smoke?" class="form-element" />
+                <input type="text" name="about" id="about" placeholder="What do you like to smoke?"
+                  class="form-element" />
               </form>
             </div>
             <div class="createAccount">
@@ -249,7 +257,7 @@
             </div>
           </div>
         </div>
-        
+
       </section>
     </main>
 
@@ -283,8 +291,9 @@
     <script type="module" src="./js/login.js"></script>
 
     <script type="module" src="./js/main.js"></script>
+    <script src="./js/apiInteraction.js"></script>
 
 
-  </body>
+</body>
 
 </html>

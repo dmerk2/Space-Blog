@@ -289,3 +289,9 @@ nav.navBar a:hover {
   /* border: 2px solid blue; */
   height: 100%;
 }
+
+#myList{
+  text-decoration: none;
+  list-style-type: none;
+  
+}
