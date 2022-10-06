@@ -5,6 +5,5 @@ function myFunction(){
     const textNode = document.createTextNode(thoughtText);
     node.appendChild(textNode);
     document.getElementById("myList").appendChild(node);
-    fetch
 }
 
