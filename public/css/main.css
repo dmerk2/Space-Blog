@@ -274,12 +274,21 @@ nav.navBar a:hover {
   content: "I'm so high";
   transform-origin: left bottom;
   transform: rotateX(90deg);
+  height: 100%;
+  justify-content:center;
+  text-align: center;
+  align-items: center;  
 }
+.signUp:after{
+  content: "Packing Bowl";
+}
+
 
 .signIn:hover, .signUp:hover {
   box-shadow: inset 0 0 40px rgb(217, 75, 19);
   transform-origin: center bottom;
   transform: rotateX(-90deg) translateY(100%);
+
 }
 
 
@@ -291,3 +300,8 @@ nav.navBar a:hover {
   list-style-type: none;
   
 }
+
+@media (max-width: 768px) {
+  .projects .projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
