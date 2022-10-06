@@ -38,7 +38,7 @@
   margin: 0 auto;
   padding-left: 128px;
   padding-right: 128px;
-
+  justify-content: center;
   align-items: center;
   width: 100%;
   /* border: 2px solid red; */
@@ -142,24 +142,23 @@ nav.navBar a:hover {
   transition: 0.4s;
 }
 
-
 .inGrid,
 .upGrid{
   position: fixed;
-  top: 0;
-  left: 0;
   top: 50%;
   left: 50%;
-  display: flex;
+  display: grid;
   align-items: center;
   background-color: white;
   transform: translate(-50%, -50%);
-
   justify-content: center;
-  box-sizing: border-box;
   padding: 15px;
-  position: fixed;
   display:none;
+  border-radius: 10px;
+  grid-template-columns: 33% 33% 33%;
+  text-align: center;
+  margin-bottom: 15px;
+
 }
 
 .inGrid.openIn,
@@ -172,8 +171,6 @@ nav.navBar a:hover {
 .blogGrid{
   display: grid;
   grid-template-columns: 70% 30%;
-  top: 0;
-  left: 0;
   top: 50%;
   left: 50%;
   background-color: rgb(253, 253, 253);
@@ -187,6 +184,7 @@ nav.navBar a:hover {
   padding: 15px;
   position: fixed;
   display:none;
+  border-radius: 10px;
 }
 
 .blogGrid.openBlog{
@@ -283,12 +281,12 @@ nav.navBar a:hover {
 
 
 /* Clicking the sign up button  */
-.upGrid{
+/* .upGrid{
   /* background-color: blue; */
   width: 100%;
   /* border: 2px solid blue; */
   height: 100%;
-}
+} */
 
 #myList{
   text-decoration: none;
