@@ -44,9 +44,10 @@
 2. npm init -y
 3. npm install
 4. npm run watch
+```
 
 Heroku URL: https://morning-thicket-30901.herokuapp.com/ 
-```
+
 
 ## Contributing
 
