@@ -246,6 +246,8 @@ nav.navBar a:hover {
   display: flex;
   justify-content: center;
   width: 100%;
+  opacity: .75;
+
 }
 
 
