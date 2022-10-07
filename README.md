@@ -5,6 +5,7 @@
 
 - [Description](#description)
 - [Applications-Used](#applications-used)
+- [Images](#images)
 - [Installation](#installation)
 - [Contributing](#contributing)
 
@@ -43,6 +44,10 @@ We created a blog post called Spaced Out. Spaced out is a collection of thoughts
 ## Images 
 
 ![Screenshot (56)](https://user-images.githubusercontent.com/102045473/194637620-a776a603-7971-43d9-ac4e-072e84f55515.png)
+
+![Spaced out 2](https://user-images.githubusercontent.com/102045473/194638065-8c27795a-2788-4992-bbaa-4b24dac7b025.png)
+
+![spaced out 3](https://user-images.githubusercontent.com/102045473/194638423-71e8d83b-a95a-428a-b855-ba010737b731.png)
 
 
 ## Installation
