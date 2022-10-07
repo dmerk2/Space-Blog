@@ -40,6 +40,11 @@ We created a blog post called Spaced Out. Spaced out is a collection of thoughts
 13. .ENV
 ```
 
+## Images 
+
+![Screenshot (56)](https://user-images.githubusercontent.com/102045473/194637620-a776a603-7971-43d9-ac4e-072e84f55515.png)
+
+
 ## Installation
 
 ```md
