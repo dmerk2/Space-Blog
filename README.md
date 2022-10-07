@@ -13,15 +13,18 @@
 
 ## Description
 
-
-We created a blog post called Spaced Out. Spaced out is a collection of thoughts created by users who use Marijuana. Right now the page is still being devoleped, stay tuned for upgrades to the project. We have already created a backend for the website and we have a cool design for the front end. We would like to incorperate the following features in the not to distant future.
+```md
+We created a blog post called Spaced Out. Spaced out is a collection of thoughts created by users who use Marijuana. 
+Right now the page is still being devoleped, stay tuned for upgrades to the project. We have already created a backend for the 
+website and we have a cool design for the front end. We would like to incorperate the following features in the not to distant 
+future.
 
 * We would like users to be able  to create an account. 
 * We would like usesrs to post blog posts.
 * We would  like if users can also edit and delete their own posts.  
 * allow them to comment on posts from other users.
 * create our front end with Handlebars.js
-
+```
 
 ## Applications Used
 
